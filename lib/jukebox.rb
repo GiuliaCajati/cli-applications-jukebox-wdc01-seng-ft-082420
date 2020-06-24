@@ -40,7 +40,7 @@ def exit_jukebox
   puts "Goodbye"
 end 
 
-def run 
+def run (songs)
   play 
   input = gets.strip 
   if input == "list" then 
