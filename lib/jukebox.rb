@@ -11,6 +11,8 @@ songs = [
   "Amos Lee - Keep It Loose, Keep It Tight"
 ]
 
+# -- Commands -- 
+
 def help
   puts "I accept the following commands:
 - help : displays this help message
@@ -40,11 +42,14 @@ def exit_jukebox
   puts "Goodbye"
 end 
 
+
+# -- RUN --
+
 def run (songs)
   while true do
     puts "Please enter a command:"
-    response = gets.chomp
-    case response
+    input = gets.chomp
+    case input
     when "exit"
       exit_jukebox
       break
@@ -60,15 +65,3 @@ def run (songs)
   end
 end
 
-  play 
-  input = gets.strip 
-  if input == "list" then 
-    list 
-    elsif
-    input == "play" then 
-    play 
-    elsif 
-    input == "exit" then 
-    exit_jukebox
-  end 
-end 
