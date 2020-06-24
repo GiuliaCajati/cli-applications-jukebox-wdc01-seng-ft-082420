@@ -23,7 +23,8 @@ def list (songs)
   (songs)each_with_index
 end 
 
-def play
+def play (songs) 
+  puts 
 end 
 
 def exit_jukebox 
