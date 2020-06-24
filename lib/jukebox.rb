@@ -27,7 +27,9 @@ end
 def play (songs) 
   puts "Please enter a song name or number:"
   input = gets.chomp 
-   if input == songs then
+    if input.to_i >= 1 && input.to_i <= songs.length
+     puts "Playing #{songs[input.to_i-1]}"
+     # extract intergers from input 
      puts "Playing <song name>"
      else 
      puts "Invalid input, please try again"
