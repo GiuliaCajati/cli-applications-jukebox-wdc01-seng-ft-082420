@@ -29,10 +29,11 @@ def play (songs)
   input = gets.chomp 
     if input.to_i >= 1 && input.to_i <= songs.length
      puts "Playing #{songs[input.to_i-1]}"
-     # extract intergers from input 
-     puts "Playing <song name>"
-     else 
-     puts "Invalid input, please try again"
+     # extract intergers from input, if it is greater than 1 and the smaller than the number of songs then -1 to get the index and pull the song 
+    elsif songs.include?(input)
+      puts "Playing #{songs.find{|song| song == input}}"
+    else
+      puts "Invalid input, please try again"
 end 
 
 def exit_jukebox 
