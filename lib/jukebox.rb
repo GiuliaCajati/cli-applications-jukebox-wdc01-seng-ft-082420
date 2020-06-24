@@ -26,8 +26,7 @@ end
 
 def play (songs) 
   puts "Please enter a song name or number:"
-  gets.strip
-  input = gets. 
+  input = gets.chomp 
    if input == songs then
      puts "Playing <song name>"
      else 
