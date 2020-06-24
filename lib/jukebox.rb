@@ -20,7 +20,7 @@ def help
 end
 
 def list (songs)
-  each_wi
+  each_with_index(songs)
 end 
 
 def play
