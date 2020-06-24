@@ -38,5 +38,14 @@ def exit_jukebox
 end 
 
 def run 
-  puts 
+  play 
+  input = gets.strip 
+  if input == "list" then 
+    list 
+    elsif
+    input == "play" then 
+    play 
+    elsif 
+    input == "exit" then 
+    exit_jukebox
 end 
